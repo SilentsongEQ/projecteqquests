@@ -6,7 +6,7 @@ function event_death_complete(e)
 	-- Do nothing unless Quillmane is not spawned
 	if not eq.get_entity_list():IsMobSpawnedByNpcTypeID(quillmane) then
 		-- percentile roll to determine if Quillmane will be spawned
-		local random_result = math.random(100);
+		local random_result = math.random(50);
 		-- He can spawn in 1 of 3 places.
 		if(random_result < 4) then
 			eq.spawn2(quillmane,101,0,3210,-6821.6,38.3,386.6);
